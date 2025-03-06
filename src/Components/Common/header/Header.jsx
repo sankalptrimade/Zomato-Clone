@@ -18,7 +18,7 @@ const Header = () => {
           <div className="location-wrapper">
             <div className="location-icon-name">
               <IoLocationOutline className="absolute-center location-icon" />
-              <div>Banglore</div>
+              <div>Hyderabad</div>
             </div>
             <FaCaretDown className="absolute-center" />
           </div>

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <div className='absolute-center'>
       Made with 🔥 by Sankalp Trimade
     </div>
   )

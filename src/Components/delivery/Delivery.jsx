@@ -3,6 +3,10 @@ import "./Delivery.css";
 import Filter from "../Common/filter/Filter";
 import { IoFilter } from "react-icons/io5";
 import { HiArrowsUpDown } from "react-icons/hi2";
+import DeliveryCollections from "./delivery collections/DeliveryCollections";
+import TopBrands from "./top brands/TopBrands";
+import ExploreSection from "../Common/explore section/ExploreSection";
+import { restaurants } from "../../data/restaurants";
 
 const deliveryFilters = [
   {
@@ -33,12 +37,17 @@ const deliveryFilters = [
   },
 ];
 
+const restaurantList = restaurants;
+
 const Delivery = () => {
   return (
     <div>
       <div className="max-width">
         <Filter filterList={deliveryFilters} />
       </div>
+      <DeliveryCollections />
+      <TopBrands />
+      <ExploreSection list = {restaurantList} collectionName="Delivery Restaurants in Hyderabad"/>
     </div>
   );
 };
